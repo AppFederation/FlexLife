@@ -26,7 +26,9 @@
               "apps/cloud-time/src/favicon.ico",
               "apps/cloud-time/src/assets"
             ],
-            "styles": ["apps/cloud-time/src/styles.scss"],
+            "styles": [
+              "apps/cloud-time/src/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -81,7 +83,9 @@
               "apps/cloud-time/tsconfig.app.json",
               "apps/cloud-time/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "test": {
@@ -116,7 +120,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/cloud-time-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -127,7 +133,7 @@
       "typescriptMismatch": false,
       "versionMismatch": false
     },
-    "defaultCollection": "@nrwl/schematics"
+    "defaultCollection": "@nstudio/schematics"
   },
   "schematics": {
     "@nrwl/schematics:application": {
