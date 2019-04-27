@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "cloudtime", "camelCase"],
+    "component-selector": [true, "element", "cloudtime", "kebab-case"]
+  }
+}
