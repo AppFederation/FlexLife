@@ -13,6 +13,12 @@
     },
     "cloud-time-e2e": {
       "tags": []
+    },
+    "libs": {
+      "tags": []
+    },
+    "xplat": {
+      "tags": []
     }
   }
 }
