@@ -25,7 +25,17 @@
     "workspace-schematic": "./node_modules/.bin/nx workspace-schematic",
     "dep-graph": "./node_modules/.bin/nx dep-graph",
     "help": "./node_modules/.bin/nx help",
-    "clean.shared": "cd libs/ && git clean -dfX && cd ../xplat/ && git clean -dfX"
+    "clean.shared": "cd libs/ && git clean -dfX && cd ../xplat/ && git clean -dfX",
+    "clean": "npx rimraf -- hooks node_modules package-lock.json && npm i",
+    "build.ionic.cloud-time-app": "cd apps/ionic-cloud-time-app && npm run build:web",
+    "prepare.ionic.cloud-time-app": "npm run clean && npm run clean.ionic.cloud-time-app && npm run build.ionic.cloud-time-app",
+    "prepare.ionic.cloud-time-app.ios": "npm run prepare.ionic.cloud-time-app && cd apps/ionic-cloud-time-app && npm run cap.add.ios",
+    "prepare.ionic.cloud-time-app.android": "npm run prepare.ionic.cloud-time-app && cd apps/ionic-cloud-time-app && npm run cap.add.android",
+    "open.ionic.cloud-time-app.ios": "cd apps/ionic-cloud-time-app && npm run cap.ios",
+    "open.ionic.cloud-time-app.android": "cd apps/ionic-cloud-time-app && npm run cap.android",
+    "sync.ionic.cloud-time-app": "cd apps/ionic-cloud-time-app && npm run cap.copy",
+    "start.ionic.cloud-time-app": "cd apps/ionic-cloud-time-app && npm start",
+    "clean.ionic.cloud-time-app": "cd apps/ionic-cloud-time-app && npx rimraf -- hooks node_modules platforms www plugins ios android package-lock.json && npm i && rimraf -- package-lock.json"
   },
   "private": true,
   "dependencies": {

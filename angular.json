@@ -182,6 +182,17 @@
           }
         }
       }
+    },
+    "ionic-cloud-time-app": {
+      "root": "apps/ionic-cloud-time-app/",
+      "sourceRoot": "apps/ionic-cloud-time-app/src",
+      "projectType": "application",
+      "prefix": "ctm",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

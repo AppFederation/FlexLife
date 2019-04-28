@@ -19,6 +19,9 @@
     },
     "xplat": {
       "tags": []
+    },
+    "ionic-cloud-time-app": {
+      "tags": []
     }
   }
 }
